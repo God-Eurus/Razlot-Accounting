@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.pexels.com/photos/7681135/pexels-photo-7681135.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?_gl=1*1twg82q*_ga*NjIwNDY4NzAuMTczNjg0MTc1OQ..*_ga_8JE65Q40S6*czE3NTcwMjg0MDAkbzckZzEkdDE3NTcwMjg0MTIkajQ4JGwwJGgw"
                   alt="Professional accountant at work"
                   className="rounded-lg shadow-xl"
                 />
