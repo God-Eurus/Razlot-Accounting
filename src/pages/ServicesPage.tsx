@@ -89,14 +89,14 @@ const ServicesPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 bg-[#FFF3E4]">
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-[#483434] text-white py-16 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-md">
             Professional Accounting Services
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#EED6C4] max-w-3xl mx-auto">
             Comprehensive financial solutions designed to help your business thrive 
             with accurate, timely, and professional accounting services.
           </p>
@@ -104,7 +104,7 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12">
             {services.map((service, index) => {
@@ -112,27 +112,27 @@ const ServicesPage: React.FC = () => {
               return (
                 <div 
                   key={index} 
-                  className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-xl shadow-md border border-[#EED6C4] overflow-hidden hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="p-8">
                     <div className="flex items-start space-x-6">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                          <IconComponent className="h-8 w-8 text-blue-600" />
+                        <div className="w-16 h-16 bg-[#EED6C4] rounded-lg flex items-center justify-center shadow-sm">
+                          <IconComponent className="h-8 w-8 text-[#6B4F4F]" />
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                        <h3 className="text-2xl font-bold text-[#483434] mb-4">
                           {service.title}
                         </h3>
-                        <p className="text-gray-600 text-lg mb-6">
+                        <p className="text-[#6B4F4F] text-lg mb-6">
                           {service.description}
                         </p>
                         <div className="grid md:grid-cols-2 gap-3">
                           {service.features.map((feature, featureIndex) => (
                             <div key={featureIndex} className="flex items-center space-x-2">
-                              <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                              <span className="text-gray-700">{feature}</span>
+                              <CheckCircle className="h-5 w-5 text-[#6B4F4F] flex-shrink-0" />
+                              <span className="text-[#483434]">{feature}</span>
                             </div>
                           ))}
                         </div>
@@ -147,53 +147,53 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#EED6C4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose ProLedger?
+            <h2 className="text-3xl md:text-4xl font-bold text-[#483434] mb-4">
+              Why Choose Razlot?
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-[#6B4F4F] max-w-2xl mx-auto">
               Experience the difference of working with a dedicated accounting professional 
               who puts your business success first.
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-blue-600" />
+            <div className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+              <div className="w-16 h-16 bg-[#FFF3E4] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <Clock className="h-8 w-8 text-[#6B4F4F]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-[#483434] mb-3">
                 Timely & Reliable
               </h3>
-              <p className="text-gray-600">
+              <p className="text-[#6B4F4F]">
                 Consistent, punctual service delivery with attention to deadlines 
                 and your business schedule.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-green-600" />
+            <div className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+              <div className="w-16 h-16 bg-[#FFF3E4] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <Shield className="h-8 w-8 text-[#6B4F4F]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-[#483434] mb-3">
                 Secure & Confidential
               </h3>
-              <p className="text-gray-600">
+              <p className="text-[#6B4F4F]">
                 Your financial information is protected with the highest level 
                 of security and confidentiality.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-8 w-8 text-purple-600" />
+            <div className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+              <div className="w-16 h-16 bg-[#FFF3E4] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <MessageCircle className="h-8 w-8 text-[#6B4F4F]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-[#483434] mb-3">
                 Personal Touch
               </h3>
-              <p className="text-gray-600">
+              <p className="text-[#6B4F4F]">
                 Direct communication and personalized service tailored to 
                 your specific business needs.
               </p>
@@ -203,18 +203,18 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-[#6B4F4F]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 drop-shadow-md">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#EED6C4] mb-8 max-w-2xl mx-auto">
             Contact me today to discuss your accounting needs and learn how 
             I can help streamline your financial operations.
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
+            className="inline-block bg-[#EED6C4] text-[#483434] px-8 py-4 rounded-lg font-semibold hover:bg-[#FFF3E4] transition-colors shadow-md"
           >
             Request Free Consultation
           </Link>
