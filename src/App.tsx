@@ -9,11 +9,13 @@ import ContactPage from './pages/ContactPage';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import ScrollToTop from './components/ScrollToTop'; // Import the new component
 
 function App() {
   return (
     <AuthProvider>
       <Router>
+        <ScrollToTop /> {/* Add the component here */}
         <div className="min-h-screen bg-gray-50">
           <Navigation />
           <main>

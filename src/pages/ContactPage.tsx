@@ -4,13 +4,6 @@ import { supabase } from '../lib/supabase';
 import toast from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// This is a placeholder for the real supabase client.
-// In a real app, you would import it as you did.
-const mockSupabase = {
-  from: () => ({
-    insert: () => new Promise(resolve => setTimeout(() => resolve({ error: null }), 1500))
-  })
-};
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +39,7 @@ const ContactPage: React.FC = () => {
 
     try {
         // Using mockSupabase for preview purposes. Replace with `supabase` in your project.
-      const { error } = await mockSupabase
+      const { error } = await supabase
         .from('client_requests')
         .insert([ // FIX: Changed from {} to [] to pass an array of objects
           {
